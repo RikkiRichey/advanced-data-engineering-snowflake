@@ -11,6 +11,7 @@ on:
       - staging
       - main
 
+
 jobs:
   deploy_data_environment:
     # Only run when PR is merged or on direct push to environment branches
