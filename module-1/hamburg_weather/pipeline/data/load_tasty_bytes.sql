@@ -1,4 +1,5 @@
-USE DATABASE
+USE DATABASE COURSE_REPO;
+
 USE ROLE accountadmin;
 
 
@@ -58,7 +59,7 @@ raw zone table build
 -- country table build
 
 -- todo: complete table build
-CREATE TABLE {{env}}_tasty_bytes.raw_pos.country
+CREATE OR ALTER TABLE {{env}}_tasty_bytes.raw_pos.country
 (
    country_id NUMBER(18,0),
    country VARCHAR(16777216),
@@ -191,8 +192,8 @@ CREATE OR ALTER TABLE {{env}}_tasty_bytes.raw_customer.customer_loyalty
 );
 
 
-/*--
-harmonized view creation
+--/*--
+--harmonized view creation
 --*/
 
 
@@ -294,7 +295,7 @@ raw zone table load
 USE WAREHOUSE demo_build_wh;
 
 
- country table load
+-- country table load
  COPY INTO {{env}}_tasty_bytes.raw_pos.country
  (
     country_id,
