@@ -1,4 +1,4 @@
-USE DATABASE;
+USE DATABASE COURSE_REPO;
 
 USE ROLE accountadmin;
 
