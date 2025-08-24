@@ -1,4 +1,5 @@
-USE DATABASE
+USE DATABASE;
+
 USE ROLE accountadmin;
 
 
